@@ -1,0 +1,39 @@
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js
+        id="594243151"
+        lrc-type="0"
+        server="netease"
+        order="random"
+        type="playlist"
+        fixed="true"
+        list-olded="true">
+</meting-js>
+<!-- 右下角live2d效果 -->
+<script type="text/javascript">
+setTimeout(() => {
+        L2Dwidget.init({
+                "model": {
+                        "scale": 0.5
+                },
+                "display": {
+                        "position": "right",
+                        "width": 170,
+                        "height": 200,
+                        "hOffset": 0,
+                        "vOffset": -20
+                },
+                "mobile": {
+                        "show": true,
+                        "scale": 0.5
+                },
+                "react": {
+                        "opacityDefault": 1.0,
+                        "opacityOnHover": 0.2
+                }
+        });
+}, 1000)
+</script>
